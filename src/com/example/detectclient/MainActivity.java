@@ -33,11 +33,12 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
 	private NetInfo net;
-	private ArrayList<Client> clients;
 	private TextView text;
 	private Button btn;
 	private NetworkDiscover discover= null;
 	String rs="";
+	
+	public static ArrayList<Client> clients;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,12 +58,16 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				clients =  discover.clients;
+				int a = 0;
 			}
 		});
 	    
 	   
 	    
+	}
+	private void setInfo()
+	{
+		clients = new ArrayList<Client>();
 	}
 
 	@Override

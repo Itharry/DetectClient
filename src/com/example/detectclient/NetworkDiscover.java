@@ -16,7 +16,7 @@ public class NetworkDiscover extends AsyncTask<Void, Client, Void> {
 	private long end = 0;
 	private long size = 0;
 	private String nmblookupLocation = "";
-	public ArrayList<Client> clients;
+	private ArrayList<Client> clients;
 	private Activity activity;
 	private String rs="";
 
@@ -130,5 +130,11 @@ public class NetworkDiscover extends AsyncTask<Void, Client, Void> {
 		}
 		
 		
+	}
+	@Override
+	protected void onPostExecute(Void void1)
+	{
+		super.onPostExecute(void1);
+		MainActivity.clients = clients;
 	}
 }

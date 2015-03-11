@@ -15,8 +15,14 @@ public class SSH extends AsyncTask<Void, Client, Void>{
 	private ArrayList<SSHClient> sshclients;
 	private ArrayList<Client> Rasclients;
 	private byte[] reSource=null;
-	
-	public void SetResource(Activity activity)
+	private Activity activity;
+	public SSH(Activity activity, ArrayList<Client> clients)
+	{
+		this.activity=activity;
+		this.Rasclients=clients;
+		SetResource();
+	}
+	private void SetResource()
 	{
 		InputStream stream=null;
 		stream=activity.getResources().openRawResource(activity.getResources().getIdentifier("source", "raw", activity.getPackageName()));

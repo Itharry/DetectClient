@@ -80,7 +80,7 @@ public class Function {
     {
     	Connection conn = new Connection(hostname);
     	try {
-			conn.connect(null,1000,1000);
+			conn.connect(null,100,100);
 			return conn.authenticateWithPassword("pi", "raspberry");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

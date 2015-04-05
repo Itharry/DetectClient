@@ -61,7 +61,7 @@ public class NetworkDiscover extends AsyncTask<Void, Client, Void> {
 			client.ipAddress = NetInfo.getIpFromLong(i);
 			try {
 				Process p1 = Runtime.getRuntime().exec(
-						"ping -c 1 " + client.ipAddress);
+						"ping -c 1 " + client.ipAddress +"-W 100");
 				int returnVal = p1.waitFor();
 				client.isAlive = (returnVal == 0);
 				p1.destroy();

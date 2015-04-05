@@ -38,7 +38,7 @@ public class NetInfo {
         this.ctxt=ctxt;
         getIP();
         getWifiInfo();
-        ip_start=getLongFromIp(gatewayIP);
+        ip_start=getLongFromIp(gatewayIP)+100;
         ip_end=ip_start+8;
     }
     public void getIP()

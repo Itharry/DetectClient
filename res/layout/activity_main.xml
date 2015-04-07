@@ -19,13 +19,29 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    
 
-    <Button
-        android:id="@+id/btnStart"
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="INSTALL" />
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:enabled="false"
+            android:text="INSTALL" />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:enabled="false"
+            android:text="NEXT" />
+    </LinearLayout>
     
     <GridView
         android:id="@+id/gridView1"

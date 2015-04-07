@@ -5,21 +5,31 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+import com.example.detectclient.R;
+
 import ch.ethz.ssh2.Connection;
 import ch.ethz.ssh2.SCPClient;
 import ch.ethz.ssh2.Session;
 import android.app.Activity;
 import android.os.AsyncTask;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 public class SSH extends AsyncTask<Void, Client, Void>{
 	private ArrayList<SSHClient> sshclients;
 	private ArrayList<Client> Rasclients;
 	private byte[] reSource=null;
 	private Activity activity;
+	private int count;
+	private TextView txtpercent;
+	private ProgressBar progressBar;
 	public SSH(Activity activity, ArrayList<Client> clients)
 	{
 		this.activity=activity;
 		this.Rasclients=clients;
+		this.count = 0;
+		this.txtpercent =(TextView) activity.findViewById(R.id.txtPercent);
+		this.progressBar = (ProgressBar)activity.findViewById(R.id.progressBar1);
 		SetResource();
 	}
 	private void SetResource()
@@ -60,10 +70,20 @@ public class SSH extends AsyncTask<Void, Client, Void>{
 	protected void onProgressUpdate(Client...clients)
 	{
 		super.onProgressUpdate(clients);
+		txtpercent.setText(String.valueOf(count*100/Rasclients.size()) + " %");
+		progressBar.setProgress((int)count*100/Rasclients.size());
+		
 	}
 	@Override
 	protected Void doInBackground(Void... params) {
 		// TODO Auto-generated method stub
+		for (Client client : Rasclients) {
+			SSHClient sshClient = new SSHClient(client);
+			if(sshClient.getisConnection()){
+				CopyResourceToRaspberry(sshClient);
+			}
+			count++;
+		}
 		return null;
 	}
 	@Override

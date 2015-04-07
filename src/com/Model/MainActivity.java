@@ -59,6 +59,9 @@ public class MainActivity extends Activity {
 		Typeface font = Typeface.createFromAsset(getAssets(),
 				"Helveticaneuelight.ttf");
 
+		
+	}
+	private void scanNetwork(){
 		netinfo = new NetInfo(getApplicationContext());
 		discover = new NetworkDiscover(this);
 		discover.setNetwork(netinfo.ip_start, netinfo.ip_end);

@@ -10,16 +10,20 @@ public class SSHClient {
 	private Connection conn = null;
 	private Session sess = null;
 	private boolean isAutenticate = false;
+	private boolean isConnection = false;
 	private String username = "pi";
 	private String password = "raspberry";
 
 	public SSHClient(Client client) {
 		this.client = client;
-		ConnectSSH();
+		isConnection = ConnectSSH();
 	}
 	public Connection getConnnection()
 	{
 		return conn;
+	}
+	public boolean getisConnection(){
+		return isConnection;
 	}
 	public Session getSession()
 	{

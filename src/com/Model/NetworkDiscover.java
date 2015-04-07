@@ -76,16 +76,6 @@ public class NetworkDiscover extends AsyncTask<Void, Client, Void> {
 				InetAddress inet = null;
 				inet = InetAddress.getByName(client.ipAddress);
 				client.isAlive = inet.isReachable(200);
-				/*Process p1 = Runtime.getRuntime().exec(
-						"ping -c 1 " + client.ipAddress);
-				int returnVal = p1.waitFor();
-				client.isAlive = (returnVal == 0);
-				p1.destroy();*/
-				/*if (!client.isAlive) {
-					InetAddress inet = null;
-					inet = InetAddress.getByName(client.ipAddress);
-					client.isAlive = inet.isReachable(1000);
-				}*/
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

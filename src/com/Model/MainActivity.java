@@ -1,4 +1,4 @@
-package com.example.detectclient;
+package com.Model;
 
 import java.io.BufferedReader;
 import jcifs.netbios.NbtAddress;
@@ -15,12 +15,15 @@ import java.net.MulticastSocket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 
+import com.example.detectclient.R;
+
 import ch.ethz.ssh2.Connection;
 import ch.ethz.ssh2.SCPClient;
 import ch.ethz.ssh2.Session;
 import ch.ethz.ssh2.StreamGobbler;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.Menu;
@@ -32,41 +35,37 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-	private NetInfo net;
-	private TextView text;
-	private Button btn;
-	private NetworkDiscover discover= null;
-	String rs="";
-	
+	private Button btnStart;
+	private NetInfo netinfo;
+	private NetworkDiscover discover = null;
+
 	public static ArrayList<Client> clients;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		text=(TextView)findViewById(R.id.text);
-		btn=(Button)findViewById(R.id.button1);
-		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitNetwork().build();
-	    StrictMode.setThreadPolicy(policy);
-	    
-	    net = new NetInfo(getApplicationContext());
-	    discover = new NetworkDiscover(this);
-	    discover.setNetwork(net.ip_start, net.ip_end);
-	    discover.execute();
-	    
-	    btn.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				int a = 0;
-			}
-		});
-	    
-	   
-	    
+
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+				.permitNetwork().build();
+		StrictMode.setThreadPolicy(policy);
+
+		init();
+
 	}
-	private void setInfo()
-	{
+
+	private void init() {
+		btnStart = (Button) findViewById(R.id.btnStart);
+		Typeface font = Typeface.createFromAsset(getAssets(),
+				"Helveticaneuelight.ttf");
+
+		netinfo = new NetInfo(getApplicationContext());
+		discover = new NetworkDiscover(this);
+		discover.setNetwork(netinfo.ip_start, netinfo.ip_end);
+		discover.execute();
+	}
+
+	private void setInfo() {
 		clients = new ArrayList<Client>();
 	}
 

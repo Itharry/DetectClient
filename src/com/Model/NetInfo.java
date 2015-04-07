@@ -1,4 +1,4 @@
-package com.example.detectclient;
+package com.Model;
 
 import android.content.Context;
 import android.net.wifi.WifiInfo;
@@ -38,8 +38,8 @@ public class NetInfo {
         this.ctxt=ctxt;
         getIP();
         getWifiInfo();
-        ip_start=getLongFromIp(gatewayIP)+100;
-        ip_end=ip_start+8;
+        ip_start=getLongFromIp(gatewayIP);
+        ip_end=ip_start+253;
     }
     public void getIP()
     {

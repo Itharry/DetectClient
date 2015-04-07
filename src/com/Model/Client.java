@@ -1,4 +1,4 @@
-package com.example.detectclient;
+package com.Model;
 
 import android.util.Log;
 

@@ -1,0 +1,10 @@
+<resources>
+     <color name="lightblue">#aae4ef</color>
+     <color name="deepblue">#0c7da7</color>
+     <color name="lightdark">#c4c6c7</color>
+     <color name="deepdark">#777879</color>      
+     <color name="white">#ffffff</color>  
+     <color name="blue">#01579b</color> 
+     <color name="bluelight">#58ABF9</color>  
+     <color name="bluedark">#0F468C</color>
+</resources>

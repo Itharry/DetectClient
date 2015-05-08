@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item  
+        android:id="@+id/control_activity_popup_menu_turnoff_viewstream"  
+        android:title="@string/control_activity_popup_menu_turnoff_viewstream"/> 
+</menu>

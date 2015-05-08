@@ -8,7 +8,175 @@
 package com.example.detectclient;
 
 public final class R {
+    public static final class anim {
+        public static final int dialog_main_hide_amination=0x7f040000;
+        public static final int dialog_main_show_amination=0x7f040001;
+        public static final int dialog_root_hide_amin=0x7f040002;
+        public static final int dialog_root_show_amin=0x7f040003;
+        public static final int progress_indeterminate_animation=0x7f040004;
+        public static final int snackbar_hide_animation=0x7f040005;
+        public static final int snackbar_show_animation=0x7f040006;
+    }
     public static final class attr {
+        /**  in float button indicate if must start with animation 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int animate=0x7f01000d;
+        /**  in switche's view indicate state of view 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int check=0x7f010008;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int checkBoxSize=0x7f010009;
+        /**  if true, delays calls to OnClickListeners until ripple effect ends 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int clickAfterRipple=0x7f01000f;
+        /**  in float button indicate icon resource 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int iconDrawable=0x7f01000b;
+        /**  in button whitch contains drawable indicate icon resource 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int iconSize=0x7f01000c;
+        /**  in progress view indicate max value of progress 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max=0x7f010003;
+        /**  in progress view indicate min value of progress 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int min=0x7f010004;
+        /**  in progress view indicate value of progress 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress=0x7f010006;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ringWidth=0x7f010007;
+        /**  set the border of the ripple frame 
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rippleBorderRadius=0x7f01000e;
+        /**  Color of ripple animation 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int rippleColor=0x7f010000;
+        /**  Speed of ripple animation 
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rippleSpeed=0x7f010001;
+        /**  indicate if the slider must show number indicator 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int showNumberIndicator=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int thumbSize=0x7f01000a;
+        /**  in progress view indicate value of progress 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int value=0x7f010005;
+    }
+    public static final class color {
+        public static final int blue=0x7f060007;
+        public static final int bluedark=0x7f060009;
+        public static final int bluelight=0x7f060008;
+        public static final int deepblue=0x7f060003;
+        public static final int deepdark=0x7f060005;
+        public static final int green=0x7f060000;
+        public static final int lightblue=0x7f060002;
+        public static final int lightdark=0x7f060004;
+        public static final int thumbColor=0x7f060001;
+        public static final int white=0x7f060006;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -18,41 +186,200 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
+        public static final int imageBase=0x7f070007;
+        public static final int imageBase_5=0x7f070008;
+        public static final int imageBase_75=0x7f070009;
+        public static final int marginBase=0x7f070002;
+        public static final int marginBasex2=0x7f070003;
+        public static final int marginBasex3=0x7f070004;
+        public static final int marginBasex4=0x7f070005;
+        public static final int marginBasex5=0x7f070006;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int pc1=0x7f020001;
-        public static final int pc2=0x7f020002;
-        public static final int rasberry=0x7f020003;
+        public static final int above_bg_off=0x7f020000;
+        public static final int above_bg_on=0x7f020001;
+        public static final int background_button=0x7f020002;
+        public static final int background_button_float=0x7f020003;
+        public static final int background_button_rectangle=0x7f020004;
+        public static final int background_checkbox=0x7f020005;
+        public static final int background_checkbox_check=0x7f020006;
+        public static final int background_checkbox_uncheck=0x7f020007;
+        public static final int background_progress=0x7f020008;
+        public static final int background_switch_ball_uncheck=0x7f020009;
+        public static final int background_transparent=0x7f02000a;
+        public static final int border=0x7f02000b;
+        public static final int config_raspi_configured_icon=0x7f02000c;
+        public static final int config_raspi_not_configured_icon=0x7f02000d;
+        public static final int dialog_background=0x7f02000e;
+        public static final int float_button1_shadowp=0x7f02000f;
+        public static final int float_button_shadow1=0x7f020010;
+        public static final int ic_launcher=0x7f020011;
+        public static final int ic_reloj_max=0x7f020012;
+        public static final int icon_add=0x7f020013;
+        public static final int icon_all_raspi_off=0x7f020014;
+        public static final int icon_all_raspi_on=0x7f020015;
+        public static final int icon_camera=0x7f020016;
+        public static final int icon_raspi_off=0x7f020017;
+        public static final int icon_raspi_on=0x7f020018;
+        public static final int raspi_icon=0x7f020019;
+        public static final int shadow_down=0x7f02001a;
+        public static final int shadow_right=0x7f02001b;
+        public static final int sprite_check=0x7f02001c;
+        public static final int under_bg_off=0x7f02001d;
+        public static final int under_bg_on=0x7f02001e;
+        public static final int white_progress_bar=0x7f02001f;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f090000;
-        public static final int LinearLayout2=0x7f090003;
-        public static final int action_settings=0x7f090009;
-        public static final int btn=0x7f090005;
-        public static final int btnStart=0x7f090004;
-        public static final int gridView1=0x7f090006;
-        public static final int item_check=0x7f090008;
-        public static final int item_image=0x7f090007;
-        public static final int progressBar1=0x7f090002;
-        public static final int txtPercent=0x7f090001;
+        public static final int FrameLayout1=0x7f0b001f;
+        public static final int LinearLayout1=0x7f0b0000;
+        public static final int LinearLayout2=0x7f0b001b;
+        public static final int blue=0x7f0b0015;
+        public static final int btn_cancel=0x7f0b000f;
+        public static final int btn_close=0x7f0b0007;
+        public static final int btn_install=0x7f0b001c;
+        public static final int btn_menu=0x7f0b0022;
+        public static final int btn_next=0x7f0b001d;
+        public static final int btn_ok=0x7f0b000e;
+        public static final int btn_rescan=0x7f0b001e;
+        public static final int buttonFloatSmall=0x7f0b0017;
+        public static final int button_accept=0x7f0b002a;
+        public static final int button_cancel=0x7f0b0029;
+        public static final int buttonflat=0x7f0b003c;
+        public static final int contentDialog=0x7f0b0025;
+        public static final int contentSelector=0x7f0b0011;
+        public static final int control_activity_gv_cameras=0x7f0b0021;
+        public static final int control_activity_hlv_raspies=0x7f0b0020;
+        public static final int control_activity_popup_menu_turnoff_viewstream=0x7f0b0043;
+        public static final int dialog_rootView=0x7f0b0024;
+        public static final int et_password=0x7f0b000b;
+        public static final int et_username=0x7f0b0009;
+        public static final int green=0x7f0b0014;
+        public static final int gv_raspi=0x7f0b001a;
+        public static final int imageView1=0x7f0b0001;
+        public static final int item_camera=0x7f0b002b;
+        public static final int item_camera_img=0x7f0b002c;
+        public static final int item_camera_tv_index=0x7f0b002d;
+        public static final int item_check=0x7f0b002f;
+        public static final int item_image=0x7f0b002e;
+        public static final int item_raspi_control_img_camera=0x7f0b0037;
+        public static final int item_raspi_control_img_monitor=0x7f0b0033;
+        public static final int item_raspi_control_ln_camera=0x7f0b0036;
+        public static final int item_raspi_control_tv_above_bg=0x7f0b0032;
+        public static final int item_raspi_control_tv_border=0x7f0b0031;
+        public static final int item_raspi_control_tv_camera=0x7f0b0038;
+        public static final int item_raspi_control_tv_monitor=0x7f0b0034;
+        public static final int item_raspi_control_tv_under_bg=0x7f0b0035;
+        public static final int menu_about=0x7f0b0041;
+        public static final int menu_exit=0x7f0b0042;
+        public static final int menu_setting=0x7f0b0040;
+        public static final int menu_setup=0x7f0b003f;
+        public static final int message=0x7f0b0028;
+        public static final int message_scrollView=0x7f0b0027;
+        public static final int number_indicator_spinner_content=0x7f0b0039;
+        public static final int pb_config=0x7f0b0016;
+        public static final int pb_waiting=0x7f0b0023;
+        public static final int progressBarCircularIndetermininate=0x7f0b003a;
+        public static final int rb_quality=0x7f0b000d;
+        public static final int red=0x7f0b0013;
+        public static final int rootSelector=0x7f0b0010;
+        public static final int shape_bacground=0x7f0b003e;
+        public static final int snackbar=0x7f0b003b;
+        public static final int tableRow1=0x7f0b0008;
+        public static final int tableRow2=0x7f0b000a;
+        public static final int tableRow3=0x7f0b000c;
+        public static final int text=0x7f0b003d;
+        public static final int textView1=0x7f0b0002;
+        public static final int textView2=0x7f0b0003;
+        public static final int textView3=0x7f0b0004;
+        public static final int textView4=0x7f0b0005;
+        public static final int textView5=0x7f0b0006;
+        public static final int title=0x7f0b0026;
+        public static final int tv_percent=0x7f0b0018;
+        public static final int tv_raspi_index=0x7f0b0030;
+        public static final int tv_status=0x7f0b0019;
+        public static final int viewColor=0x7f0b0012;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int row_grid=0x7f030001;
+        public static final int activity_about_dialog=0x7f030000;
+        public static final int activity_setting_dialog=0x7f030001;
+        public static final int color_selector=0x7f030002;
+        public static final int config_activity=0x7f030003;
+        public static final int control_activity=0x7f030004;
+        public static final int dialog=0x7f030005;
+        public static final int item_camera=0x7f030006;
+        public static final int item_raspi_config=0x7f030007;
+        public static final int item_raspi_control=0x7f030008;
+        public static final int number_indicator_spinner=0x7f030009;
+        public static final int progress_dialog=0x7f03000a;
+        public static final int snackbar=0x7f03000b;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int control_activity=0x7f0a0000;
+        public static final int control_activity_popup_menu=0x7f0a0001;
     }
     public static final class raw {
-        public static final int source=0x7f040000;
+        public static final int mjpg_streamer=0x7f050000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060002;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060001;
+        public static final int about_activity_dialog_close=0x7f08001c;
+        public static final int about_activity_dialog_instructor=0x7f08001b;
+        public static final int about_activity_dialog_intro=0x7f080019;
+        public static final int about_activity_dialog_member=0x7f08001a;
+        /**  setting activity dialog 
+ about activity dialog 
+ setting activity dialog 
+ about activity dialog 
+         */
+        public static final int about_activity_dialog_version=0x7f080018;
+        public static final int action_settings=0x7f080001;
+        public static final int app_name=0x7f080000;
+        public static final int config_activity_install=0x7f080004;
+        public static final int config_activity_next=0x7f080003;
+        /**  config activity 
+ config activity 
+         */
+        public static final int config_activity_rescan=0x7f080002;
+        public static final int config_activity_status_installing_configuring=0x7f080008;
+        public static final int config_activity_status_installing_transfering_flie=0x7f080007;
+        public static final int config_activity_status_scan_complete=0x7f080006;
+        public static final int config_activity_status_scanning=0x7f080005;
+        public static final int control_activity_dialog_content=0x7f08000f;
+        public static final int control_activity_dialog_reconnect=0x7f080010;
+        public static final int control_activity_dialog_reinstall=0x7f080011;
+        /**  control activity popup menu 
+ control activity dialog 
+ control activity popup menu 
+ control activity dialog 
+         */
+        public static final int control_activity_dialog_title=0x7f08000e;
+        /**  control activity menu 
+ control activity popup menu 
+ control activity menu 
+ control activity popup menu 
+         */
+        public static final int control_activity_popup_menu_turnoff_viewstream=0x7f08000d;
+        public static final int menu_about=0x7f08000b;
+        public static final int menu_exit=0x7f08000c;
+        public static final int menu_setting=0x7f08000a;
+        /**  config activity 
+ control activity menu 
+ config activity 
+ control activity menu 
+         */
+        public static final int menu_setup=0x7f080009;
+        public static final int setting_activity_dialog_cancel=0x7f080017;
+        public static final int setting_activity_dialog_ok=0x7f080016;
+        public static final int setting_activity_dialog_password=0x7f080014;
+        public static final int setting_activity_dialog_quality=0x7f080015;
+        public static final int setting_activity_dialog_username=0x7f080013;
+        /**  control activity dialog 
+ setting activity dialog 
+ control activity dialog 
+ setting activity dialog 
+         */
+        public static final int title_activity_setting__dialog_=0x7f080012;
     }
     public static final class style {
         /** 
@@ -76,10 +403,314 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f090001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a CustomAttributes.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CustomAttributes_animate com.example.detectclient:animate}</code></td><td> in float button indicate if must start with animation </td></tr>
+           <tr><td><code>{@link #CustomAttributes_check com.example.detectclient:check}</code></td><td> in switche's view indicate state of view </td></tr>
+           <tr><td><code>{@link #CustomAttributes_checkBoxSize com.example.detectclient:checkBoxSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomAttributes_clickAfterRipple com.example.detectclient:clickAfterRipple}</code></td><td> if true, delays calls to OnClickListeners until ripple effect ends </td></tr>
+           <tr><td><code>{@link #CustomAttributes_iconDrawable com.example.detectclient:iconDrawable}</code></td><td> in float button indicate icon resource </td></tr>
+           <tr><td><code>{@link #CustomAttributes_iconSize com.example.detectclient:iconSize}</code></td><td> in button whitch contains drawable indicate icon resource </td></tr>
+           <tr><td><code>{@link #CustomAttributes_max com.example.detectclient:max}</code></td><td> in progress view indicate max value of progress </td></tr>
+           <tr><td><code>{@link #CustomAttributes_min com.example.detectclient:min}</code></td><td> in progress view indicate min value of progress </td></tr>
+           <tr><td><code>{@link #CustomAttributes_progress com.example.detectclient:progress}</code></td><td> in progress view indicate value of progress </td></tr>
+           <tr><td><code>{@link #CustomAttributes_ringWidth com.example.detectclient:ringWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomAttributes_rippleBorderRadius com.example.detectclient:rippleBorderRadius}</code></td><td> set the border of the ripple frame </td></tr>
+           <tr><td><code>{@link #CustomAttributes_rippleColor com.example.detectclient:rippleColor}</code></td><td> Color of ripple animation </td></tr>
+           <tr><td><code>{@link #CustomAttributes_rippleSpeed com.example.detectclient:rippleSpeed}</code></td><td> Speed of ripple animation </td></tr>
+           <tr><td><code>{@link #CustomAttributes_showNumberIndicator com.example.detectclient:showNumberIndicator}</code></td><td> indicate if the slider must show number indicator </td></tr>
+           <tr><td><code>{@link #CustomAttributes_thumbSize com.example.detectclient:thumbSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomAttributes_value com.example.detectclient:value}</code></td><td> in progress view indicate value of progress </td></tr>
+           </table>
+           @see #CustomAttributes_animate
+           @see #CustomAttributes_check
+           @see #CustomAttributes_checkBoxSize
+           @see #CustomAttributes_clickAfterRipple
+           @see #CustomAttributes_iconDrawable
+           @see #CustomAttributes_iconSize
+           @see #CustomAttributes_max
+           @see #CustomAttributes_min
+           @see #CustomAttributes_progress
+           @see #CustomAttributes_ringWidth
+           @see #CustomAttributes_rippleBorderRadius
+           @see #CustomAttributes_rippleColor
+           @see #CustomAttributes_rippleSpeed
+           @see #CustomAttributes_showNumberIndicator
+           @see #CustomAttributes_thumbSize
+           @see #CustomAttributes_value
+         */
+        public static final int[] CustomAttributes = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f
+        };
+        /**
+          <p>
+          @attr description
+           in float button indicate if must start with animation 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:animate
+        */
+        public static final int CustomAttributes_animate = 13;
+        /**
+          <p>
+          @attr description
+           in switche's view indicate state of view 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:check
+        */
+        public static final int CustomAttributes_check = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.example.detectclient.R.attr#checkBoxSize}
+          attribute's value can be found in the {@link #CustomAttributes} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.detectclient:checkBoxSize
+        */
+        public static final int CustomAttributes_checkBoxSize = 9;
+        /**
+          <p>
+          @attr description
+           if true, delays calls to OnClickListeners until ripple effect ends 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:clickAfterRipple
+        */
+        public static final int CustomAttributes_clickAfterRipple = 15;
+        /**
+          <p>
+          @attr description
+           in float button indicate icon resource 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:iconDrawable
+        */
+        public static final int CustomAttributes_iconDrawable = 11;
+        /**
+          <p>
+          @attr description
+           in button whitch contains drawable indicate icon resource 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:iconSize
+        */
+        public static final int CustomAttributes_iconSize = 12;
+        /**
+          <p>
+          @attr description
+           in progress view indicate max value of progress 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:max
+        */
+        public static final int CustomAttributes_max = 3;
+        /**
+          <p>
+          @attr description
+           in progress view indicate min value of progress 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:min
+        */
+        public static final int CustomAttributes_min = 4;
+        /**
+          <p>
+          @attr description
+           in progress view indicate value of progress 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:progress
+        */
+        public static final int CustomAttributes_progress = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.example.detectclient.R.attr#ringWidth}
+          attribute's value can be found in the {@link #CustomAttributes} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.detectclient:ringWidth
+        */
+        public static final int CustomAttributes_ringWidth = 7;
+        /**
+          <p>
+          @attr description
+           set the border of the ripple frame 
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:rippleBorderRadius
+        */
+        public static final int CustomAttributes_rippleBorderRadius = 14;
+        /**
+          <p>
+          @attr description
+           Color of ripple animation 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:rippleColor
+        */
+        public static final int CustomAttributes_rippleColor = 0;
+        /**
+          <p>
+          @attr description
+           Speed of ripple animation 
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:rippleSpeed
+        */
+        public static final int CustomAttributes_rippleSpeed = 1;
+        /**
+          <p>
+          @attr description
+           indicate if the slider must show number indicator 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:showNumberIndicator
+        */
+        public static final int CustomAttributes_showNumberIndicator = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.detectclient.R.attr#thumbSize}
+          attribute's value can be found in the {@link #CustomAttributes} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.detectclient:thumbSize
+        */
+        public static final int CustomAttributes_thumbSize = 10;
+        /**
+          <p>
+          @attr description
+           in progress view indicate value of progress 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.detectclient:value
+        */
+        public static final int CustomAttributes_value = 5;
+    };
 }

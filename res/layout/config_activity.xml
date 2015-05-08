@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Config_Activity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:background="@color/blue" >
+
+        <ProgressBar
+            android:id="@+id/pb_config"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/marginBasex2"
+            android:layout_marginRight="@dimen/marginBasex2"
+            android:progressDrawable="@drawable/white_progress_bar" />
+
+        <com.gc.materialdesign.views.ButtonFloatSmall
+            android:id="@+id/buttonFloatSmall"
+            android:layout_width="@dimen/imageBase"
+            android:layout_height="@dimen/imageBase"
+            android:layout_gravity="center"
+            android:background="@color/bluelight" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/marginBasex4"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/gv_raspi"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/marginBasex2"
+        android:layout_weight="0.5"
+        android:columnWidth="80dp"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/btn_install"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:background="@color/blue"
+            android:enabled="false"
+            android:text="@string/config_activity_install" >
+        </com.gc.materialdesign.views.ButtonRectangle>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:background="@color/blue"
+            android:enabled="false"
+            android:text="@string/config_activity_next" >
+        </com.gc.materialdesign.views.ButtonRectangle>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/btn_rescan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:background="@color/blue"
+            android:enabled="false"
+            android:text="@string/config_activity_rescan" >
+        </com.gc.materialdesign.views.ButtonRectangle>
+    </LinearLayout>
+
+</LinearLayout>

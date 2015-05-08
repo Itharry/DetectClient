@@ -3,31 +3,51 @@
     package="com.example.detectclient"
     android:versionCode="1"
     android:versionName="1.0" >
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_SUPER" />
-    
+
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/raspi_icon"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+        >
         <activity
-            android:name="com.Model.MainActivity"
-            android:label="@string/app_name" >
+            android:name="raspicontrol.activity.Config_Activity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="raspicontrol.activity.Control_Activity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="raspicontrol.activity.Setting_Dialog_Activity"
+            android:label="@string/title_activity_setting__dialog_"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="raspicontrol.activity.About_Dialog_Activity"
+            android:label="@string/menu_about" 
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

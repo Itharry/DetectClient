@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Raspi Control 2015</string>
+    <string name="action_settings">Settings</string>
+    
+
+    <!-- config activity -->
+    <string name="config_activity_rescan">QUÉT LẠI</string>
+    <string name="config_activity_next">TIẾP TỤC</string>
+    <string name="config_activity_install">CÀI ĐẶT</string>
+    <string name="config_activity_status_scanning">Đang dò tìm...</string>
+    <string name="config_activity_status_scan_complete">Đã dò tìm xong</string>
+    <string name="config_activity_status_installing_transfering_flie">Cài đặt: đang chuyển file...</string>
+    <string name="config_activity_status_installing_configuring">Cài đặt: đang cấu hình...</string>
+    <!-- config activity -->
+    
+    <!-- control activity menu -->
+	    <string name="menu_setup">Cài đặt</string>
+	    <string name="menu_setting">Thiết lập</string>
+	    <string name="menu_about">Giới thiệu</string>
+	    <string name="menu_exit">Thoát</string>
+    <!-- control activity menu -->
+    
+    <!-- control activity popup menu -->
+    	<string name="control_activity_popup_menu_turnoff_viewstream">Ngừng hiển thị</string>
+    <!-- control activity popup menu -->
+    
+    <!-- control activity dialog -->
+    	<string name="control_activity_dialog_title">Lỗi</string>
+    	<string name="control_activity_dialog_content">Không thể kết nối tới bất kỳ Raspi nào\!</string>
+    	<string name="control_activity_dialog_reconnect">Kết nối lại</string>
+    	<string name="control_activity_dialog_reinstall">Cài đặt lại</string>
+    <!-- control activity dialog -->
+    
+    <!-- setting activity dialog -->
+	    <string name="title_activity_setting__dialog_">Thiết đặt</string>
+	    <string name="setting_activity_dialog_username">Tên</string>
+	    <string name="setting_activity_dialog_password">Mật khẩu</string>
+	    <string name="setting_activity_dialog_quality">Chất lượng</string>
+	    <string name="setting_activity_dialog_ok">Đồng ý</string>
+    	<string name="setting_activity_dialog_cancel">Hủy</string>
+    <!-- setting activity dialog -->
+    
+    <!-- about activity dialog -->
+    	<string name="about_activity_dialog_version">Phiên bản: 1.0</string>
+    	<string name="about_activity_dialog_intro">Ứng dụng được phát triển bới nhóm sinh viên lớp MMTT2011, trường ĐH CNTT - ĐHQG HCM:</string>
+    	<string name="about_activity_dialog_member">1. 11520267 - Lý Trọng Nhân\n2. 11520114 - Nguyễn Thanh Hòa\n3. 11520495 - Đào Duy Vương\n4. 11520702 - Nguyễn Phú Cường</string>
+    	<string name="about_activity_dialog_instructor">GV hướng dẫn: TS. Nguyễn Anh Tuấn</string>
+    	<string name="about_activity_dialog_close">Đóng</string>
+    <!-- about activity dialog -->
+</resources>

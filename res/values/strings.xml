@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">DetectClient</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Raspi Control 2015</string>
     <string name="action_settings">Settings</string>
+
+    <!-- config activity -->
+    <string name="config_activity_rescan">RESCAN</string>
+    <string name="config_activity_next">NEXT</string>
+    <string name="config_activity_install">INSTALL</string>
+    <string name="config_activity_status_scanning">Scanning...</string>
+    <string name="config_activity_status_scan_complete">Scan complete</string>
+    <string name="config_activity_status_installing_transfering_flie">Installing: Transfering file...</string>
+    <string name="config_activity_status_installing_configuring">Installing: Configuring...</string>
+    <!-- config activity -->
+
+
+    <!-- control activity menu -->
+    <string name="menu_setup">Install</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_about">About</string>
+    <string name="menu_exit">Exit</string>
+    <!-- control activity menu -->
+
+
+    <!-- control activity popup menu -->
+    <string name="control_activity_popup_menu_turnoff_viewstream">Turn off view stream</string>
+    <!-- control activity popup menu -->
+
+
+    <!-- control activity dialog -->
+    <string name="control_activity_dialog_title">Error</string>
+    <string name="control_activity_dialog_content">Cannot connect to any raspi\!</string>
+    <string name="control_activity_dialog_reconnect">Connect Again</string>
+    <string name="control_activity_dialog_reinstall">Reinstall</string>
+    <!-- control activity dialog -->
+
+
+    <!-- setting activity dialog -->
+    <string name="title_activity_setting__dialog_">Setting</string>
+    <string name="setting_activity_dialog_username">Username</string>
+    <string name="setting_activity_dialog_password">Password</string>
+    <string name="setting_activity_dialog_quality">Quality</string>
+    <string name="setting_activity_dialog_ok">OK</string>
+    <string name="setting_activity_dialog_cancel">Cancel</string>
+    <!-- setting activity dialog -->
+	
+	<!-- about activity dialog -->
+    <string name="about_activity_dialog_version">Version: 1.0</string>
+    <string name="about_activity_dialog_intro">Application was developed by MMTT2011 student Group, University of Information Technology - Vietnam National University, HoChiMinh City:</string>
+    <string name="about_activity_dialog_member">1. 11520267 - Ly Trong Nhan\n2. 11520114 - Nguyen Thanh Hoa\n3. 11520495 - Dao Duy Vuong\n4. 11520702 - Nguyen Phu Cuong</string>
+    <string name="about_activity_dialog_instructor">Instructor: Ph.D Nguyen Anh Tuan</string>
+    <string name="about_activity_dialog_close">Close</string>
+    <!-- about activity dialog -->
 
 </resources>
